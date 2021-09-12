@@ -9,7 +9,7 @@ export const UtilBUtton: VFC<ButtonProps> = (props) => {
       display="inline-block"
       user-select="none"
       padding="8px 15px"
-      background={props.primary ? "#ffd700" : "#dcdcdc"}
+      background={props.primary === "true" ? "#ffd700" : "#dcdcdc"}
       primary={props.primary}
       onClick={props.onClick}
     >
