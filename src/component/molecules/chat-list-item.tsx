@@ -5,7 +5,7 @@ import { Flex, Box, Text } from "@chakra-ui/react";
 import type { ChatListItemProps } from "@/component/molecules/type";
 import { UtilBUtton } from "@/component/atoms";
 
-export const chatListItem: VFC<ChatListItemProps> = (props) => {
+export const ChatListItem: VFC<ChatListItemProps> = (props) => {
   return (
     <Flex
       bg="#fff"
