@@ -1,12 +1,12 @@
 import React from "react";
 
-interface ButtonProps {
+type ButtonProps = {
   name: string;
   // ボタンをクリックした時のイベント
   onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   // 主ボタンか副ボタンかのフラグ primary?: boolean;
-  primary?: any;
-}
+  primary?: boolean;
+};
 
 /**
  * @package
