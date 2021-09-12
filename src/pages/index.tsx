@@ -1,22 +1,47 @@
 import type { NextPage } from "next";
+import type { ChatListData } from "@/component/organisms/type";
 import Head from "next/head";
-import { Box, chakra } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { UtilBUtton } from "@/component/atoms";
+import { ChatList } from "@/component/organisms";
+
+const data: ChatListData[] = [
+  { roomId: "ROOM_1", name: "チャットルーム 1", users: [] },
+  {
+    roomId: "ROOM_2",
+    name: "チャットルーム 2",
+    users: [],
+  },
+  {
+    roomId: "ROOM_3",
+    name: "チャットルーム 3",
+    users: [],
+  },
+];
 
 const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>チャットルームリスト</title>
+        <title>チャットルーム一覧</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <div>チャットルームリスト</div>
-        <Box>
-          <chakra.h1 color="tomato">Hello World!</chakra.h1>
+        <Box p="20px">
+          <Flex align="center" justify="space-between" mb="30px">
+            <Text fontWeight="bold" fontSize="20px">
+              チャットルーム一覧
+            </Text>
+            <UtilBUtton
+              name="チャットルームを作成"
+              onClick={() => alert("作成しました")}
+              primary="true"
+            />
+          </Flex>
         </Box>
-        <UtilBUtton name="ボタン" />
+
+        <ChatList data={data} />
       </main>
     </div>
   );
