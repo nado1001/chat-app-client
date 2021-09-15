@@ -1,1 +1,1 @@
-export { ChatListItem } from "@/component/molecules/chat-list-item";
+export { ChatListItem } from "@/component/molecules/ChatListItem";

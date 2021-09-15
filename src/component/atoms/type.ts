@@ -8,7 +8,14 @@ type ButtonProps = {
   primary?: string;
 };
 
+type TextFieldProps = {
+  // テキストが入力された場合のイベント
+  onInput: (e: React.FormEvent<HTMLDivElement>) => void; // テキストからフォーカスが外れた場合のイベント
+  onBlur: (e: React.FormEvent<HTMLDivElement>) => void; // プレースホルダー用
+  placeholder: string;
+};
+
 /**
  * @package
  */
-export type { ButtonProps };
+export type { ButtonProps, TextFieldProps };

@@ -1,1 +1,1 @@
-export { ChatList } from "@/component/organisms/chat-list";
+export { ChatList } from "@/component/organisms/ChatList";

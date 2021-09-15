@@ -18,7 +18,7 @@ export const ChatList: VFC<ChatListProps> = (props) => {
               key={item.roomId}
             />
           );
-        })}{" "}
+        })}
     </div>
   );
 };
