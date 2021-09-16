@@ -23,7 +23,21 @@ type UserProps = {
   name: string;
 };
 
+type MessageProps = {
+  // ユーザー名
+  userName: string;
+  // 投稿時間
+  time: string;
+  // メッセージ
+  message: string;
+};
+
 /**
  * @package
  */
-export type { ChatListItemProps, CreateChatRoomModalProps, UserProps };
+export type {
+  ChatListItemProps,
+  CreateChatRoomModalProps,
+  UserProps,
+  MessageProps,
+};
