@@ -11,15 +11,19 @@ type ChatListItemProps = {
   history?: H.History;
 };
 
-interface CreateChatRoomModalProps {
+type CreateChatRoomModalProps = {
   // チャットルーム名が入力された場合のイベント
   onInputText: (e: React.FormEvent<HTMLDivElement>) => void; // チャットルーム名入力欄からフォーカスが外れた場合のイベント
   onBlurText: (e: React.FormEvent<HTMLDivElement>) => void;
   // 作成ボタンがクリックされた場合のイベント
   onClickButton: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
-}
+};
+
+type UserProps = {
+  name: string;
+};
 
 /**
  * @package
  */
-export type { ChatListItemProps, CreateChatRoomModalProps };
+export type { ChatListItemProps, CreateChatRoomModalProps, UserProps };
