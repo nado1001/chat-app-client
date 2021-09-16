@@ -6,7 +6,7 @@ import { Flex, Box } from "@chakra-ui/react";
 
 export const MessageList: VFC<MessageListProps> = (props) => {
   return (
-    <Box>
+    <Box pos="absolute" bottom="0">
       {props.messages &&
         props.messages.map((item: MessageItem) => {
           return (
