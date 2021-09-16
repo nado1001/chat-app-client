@@ -37,7 +37,7 @@ export const CreateChatRoomModal: VFC<CreateChatRoomModalProps> = (props) => {
           <ModalFooter>
             <UtilBUtton
               name="作成"
-              onClick={() => props.onClickButton}
+              onClick={props.onClickButton}
               primary="true"
             />
             <Button colorScheme="blue" ml={4} mr={3} onClick={onClose}>
