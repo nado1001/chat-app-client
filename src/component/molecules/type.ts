@@ -32,6 +32,15 @@ type MessageProps = {
   message: string;
 };
 
+type JoinChatRoomProps = {
+  // ユーザー名が入力された場合のイベント
+  onInputText: (e: React.FormEvent<HTMLDivElement>) => void;
+  // ユーザー名入力欄からフォーカスが外れた場合のイベント
+  onBlurText: (e: React.FormEvent<HTMLDivElement>) => void;
+  // 入室ボタンがクリックされた場合のイベント
+  onClickButton: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+};
+
 /**
  * @package
  */
@@ -40,4 +49,5 @@ export type {
   CreateChatRoomModalProps,
   UserProps,
   MessageProps,
+  JoinChatRoomProps,
 };
