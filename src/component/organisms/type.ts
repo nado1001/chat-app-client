@@ -19,7 +19,29 @@ type UserListProps = {
   users: UserItem[];
 };
 
+type MessageItem = {
+  // 履歴ID
+  logId: number;
+  // ユーザー名
+  userName: string;
+  // 投稿日時
+  time: string;
+  // メッセージ
+  message: string;
+};
+
+type MessageListProps = {
+  messages: MessageItem[];
+};
+
 /**
  * @package
  */
-export type { ChatListData, ChatListProps, UserItem, UserListProps };
+export type {
+  ChatListData,
+  ChatListProps,
+  UserItem,
+  UserListProps,
+  MessageItem,
+  MessageListProps,
+};
