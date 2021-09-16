@@ -3,6 +3,7 @@ import type { ChatListData } from "@/component/organisms/type";
 import Head from "next/head";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { UtilBUtton } from "@/component/atoms";
+import { CreateChatRoomModal } from "@/component/molecules";
 import { ChatList } from "@/component/organisms";
 
 const data: ChatListData[] = [
@@ -33,10 +34,10 @@ const Home: NextPage = () => {
             <Text fontWeight="bold" fontSize="20px">
               チャットルーム一覧
             </Text>
-            <UtilBUtton
-              name="チャットルームを作成"
-              onClick={() => alert("作成しました")}
-              primary="true"
+            <CreateChatRoomModal
+              onBlurText={() => {}}
+              onInputText={() => {}}
+              onClickButton={() => alert("作成しました")}
             />
           </Flex>
         </Box>
