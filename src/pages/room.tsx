@@ -77,26 +77,26 @@ const ChatRoom: NextPage<ChatRoomPageProps> = (props) => {
         <Box gridRow="3 / 4" gridColumn="1 / 2" textAlign="center">
           <UtilBUtton name="戻る" onClick={() => {}} />
         </Box>
-        <Box gridRow="1 / 2" gridColumn="2 / 3" pos="relative" p="10px">
-          <MessageList messages={messages} />
-        </Box>
-        <Box borderTop="1px solid #d3d3d3" gridRow="2 / 3" gridColumn="2 / 3">
-          <Box className="notJoin" display={!isJoin ? "block" : "none"}>
-            <JoinChatRoom
-              onInputText={() => {}}
-              onBlurText={() => {}}
-              onClickButton={() => {}}
-            />
-          </Box>
-          <Box className="join" display={isJoin ? "block" : "none"}>
-            <CreateMessage
-              onInputText={() => {}}
-              onBlurText={() => {}}
-              onClickButton={() => {}}
-            />
-          </Box>
-        </Box>
       </Grid>
+      <Box gridRow="1 / 2" gridColumn="2 / 3" pos="relative" p="10px">
+        <MessageList messages={messages} />
+      </Box>
+      <Box borderTop="1px solid #d3d3d3" gridRow="2 / 3" gridColumn="2 / 3">
+        <Box className="notJoin" display={!isJoin ? "block" : "none"}>
+          <JoinChatRoom
+            onInputText={() => {}}
+            onBlurText={() => {}}
+            onClickButton={() => {}}
+          />
+        </Box>
+        <Box className="join" display={isJoin ? "block" : "none"}>
+          <CreateMessage
+            onInputText={() => {}}
+            onBlurText={() => {}}
+            onClickButton={() => {}}
+          />
+        </Box>
+      </Box>
     </Grid>
   );
 };
