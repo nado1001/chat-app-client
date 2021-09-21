@@ -6,7 +6,7 @@ import { UtilBUtton, TextField } from "@/component/atoms";
 
 export const JoinChatRoom: VFC<JoinChatRoomProps> = (props) => {
   return (
-    <Grid templateRows="80px" templateColumns="1fr 80px" align="center">
+    <Grid templateRows="80px" templateColumns="1fr 80px" alignItems="center">
       <Box p="10px">
         <TextField
           placeholder="ユーザー名"

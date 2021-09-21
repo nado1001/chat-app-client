@@ -5,7 +5,7 @@ import type { MessageProps } from "@/component/molecules/type";
 
 export const Message: VFC<MessageProps> = (props) => {
   return (
-    <Box>
+    <Box my="30px">
       <Flex className="user" align="center">
         <Box className="name" fontWeight="bold">
           {props.userName}
@@ -13,8 +13,8 @@ export const Message: VFC<MessageProps> = (props) => {
         <Box className="time" fontSize="14px" ml="10px" color="#4d4d4d">
           {props.time}
         </Box>
-        <Box className="message">{props.message}</Box>
       </Flex>
+      <Box className="message">{props.message}</Box>
     </Box>
   );
 };
