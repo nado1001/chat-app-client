@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import type { UserItem, MessageItem } from "@/component/organisms/type";
 import React, { useState } from "react";
+import Router from "next/router";
 import { UtilBUtton } from "@/component/atoms";
 import { CreateMessage, JoinChatRoom } from "@/component/molecules";
 import { UserList } from "@/component/organisms";
@@ -75,7 +76,7 @@ const ChatRoom: NextPage<ChatRoomPageProps> = (props) => {
           <UserList users={users} />
         </Box>
         <Box gridRow="3 / 4" gridColumn="1 / 2" textAlign="center">
-          <UtilBUtton name="戻る" onClick={() => {}} />
+          <UtilBUtton name="戻る" onClick={() => Router.push(`/`)} />
         </Box>
       </Grid>
       <Box gridRow="1 / 2" gridColumn="2 / 3" pos="relative" p="10px">
