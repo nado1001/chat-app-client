@@ -1,20 +1,20 @@
 import type { NextPage } from "next";
-import type { ChatListData } from "@/component/organisms/type";
+import type { Room } from "@/redux/type/store";
 import Head from "next/head";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { UtilBUtton } from "@/component/atoms";
 import { CreateChatRoomModal } from "@/component/molecules";
 import { ChatList } from "@/component/organisms";
 
-const data: ChatListData[] = [
-  { roomId: "ROOM_1", name: "チャットルーム 1", users: [] },
+const data: Room[] = [
+  { id: "ROOM_1", name: "チャットルーム 1", users: [] },
   {
-    roomId: "ROOM_2",
+    id: "ROOM_2",
     name: "チャットルーム 2",
     users: [],
   },
   {
-    roomId: "ROOM_3",
+    id: "ROOM_3",
     name: "チャットルーム 3",
     users: [],
   },

@@ -1,3 +1,5 @@
+import type { Room } from "@/redux/type/store";
+
 type ChatListData = {
   roomId: string;
   name: string;
@@ -5,7 +7,7 @@ type ChatListData = {
 };
 
 type ChatListProps = {
-  data: ChatListData[];
+  data: Room[];
 };
 
 type UserItem = {
