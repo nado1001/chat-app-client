@@ -3,6 +3,14 @@ enum WebSocketEvents {
   WEBSOCKET_OPEN = "@@WEBSOCKET/OPEN",
   WEBSOCKET_SEND = "@@WEBSOCKET/SEND",
   WEBSOCKET_MESSAGE = "@@WEBSOCKET/MESSAGE",
+
+  WEBSOCKET_CREATE_ROOM = "create-room",
+  WEBSOCKET_JOIN_ROOM = "join-room",
+  WEBSOCKET_CONVERSATION = "conversation",
+  WEBSOCKET_LEAVE_ROOM = "leave-room",
+  WEBSOCKET_GET_ROOMS_LIST = "get-rooms-list",
+  WEBSOCKET_GET_CURRENT_ROOM = "get-current-room",
+  WEBSOCKET_DISCONNECT = "disconnect",
 }
 
 enum Events {
